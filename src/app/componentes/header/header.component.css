@@ -1,0 +1,18 @@
+.img-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(33, 36, 41, 0.68), rgba(33, 36, 41, 0.68)), url(../../../assets/prueba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-content{
+    font-family: 'Asap', sans-serif;
+    height: 100vh;
+    color: #FA7120;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
