@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
     NavbarComponent,
     HeaderComponent,
     AcercaDeComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule
