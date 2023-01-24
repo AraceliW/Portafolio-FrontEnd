@@ -9,5 +9,9 @@
 }
 
 .text{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    filter:grayscale(100%)
 }
