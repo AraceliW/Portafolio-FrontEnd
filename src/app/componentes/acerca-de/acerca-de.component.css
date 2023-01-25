@@ -3,9 +3,19 @@
     height: 300px;
 }
 
+.about-me{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .titulo-text{
     color: #FA7120;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+}
+
+.font-name{
+    font-family: 'Open Sans', sans-serif;
 }
 
 .text{

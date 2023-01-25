@@ -1,0 +1,20 @@
+.font-seccion{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: #FA7120;
+}
+
+@media(max-width:768px){
+    .educacion-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
