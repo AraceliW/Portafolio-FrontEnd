@@ -1,6 +1,9 @@
 .row{
-    background-color: #151717;
     padding: 20px;
+}
+
+.bg-oscuro{
+    background-color: #151717;
 }
 
 .font-seccion{
@@ -9,8 +12,16 @@
     color: #E55926;
 }
 
-.bg-orange{
-    background-color: #F1A603;
+
+.color-font-skills{
+    color: #F1A603;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+}
+
+.border-grey{
+    border-color: #696969;
+    border-style: solid;
+    border-width: 1px;
 }
 
