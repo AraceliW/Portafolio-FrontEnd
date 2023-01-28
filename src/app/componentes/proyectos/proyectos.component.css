@@ -9,5 +9,10 @@
 }
 
 .color-org{
-    color: #F1A603;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.card-bg{
+    background-color: #151717;
 }
