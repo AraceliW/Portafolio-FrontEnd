@@ -3,14 +3,40 @@
 }
 
 .font-seccion{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    color: #E55926;
+    font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+    color: white;
+    letter-spacing: 4px;
 }
 
-.color-org{
-    font-family: 'Open Sans', sans-serif;
+.font-title{
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-border{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #E55926;
+    margin: 10px auto;
+}
+
+.about h1 {
+    text-align: center;
+ }
+
+.text{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.text-orange{
+    font-family: 'Raleway', sans-serif;
+    color: #E55926;
+    font-size: 20px;
 }
 
 .seccion-bg{

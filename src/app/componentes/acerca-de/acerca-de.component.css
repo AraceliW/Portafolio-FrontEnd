@@ -10,17 +10,27 @@
 
 .titulo-text{
     color: #E55926;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .font-name{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
 }
+
+.text-about{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
 
 img{
     filter:grayscale(100%)

@@ -7,16 +7,33 @@
 }
 
 .font-seccion{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    color: #E55926;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+     color: white;
+     letter-spacing: 4px;
 }
 
+.about-border{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #E55926;
+    margin: 10px auto;
+}
+
+.about h1 {
+    text-align: center;
+ }
 
 .color-font-skills{
     color: #F1A603;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.title-skill{
+    letter-spacing: 1px;
 }
 
 .border-grey{
