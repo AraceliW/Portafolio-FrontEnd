@@ -27,7 +27,7 @@
 
 .color-font-skills{
     color: #F1A603;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -42,3 +42,46 @@
     border-width: 1px;
 }
 
+
+/*INICIO DEL PROGRESS BAR SKILL*/
+.bar{
+    height: 6px;
+    background: #696969;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bar span{
+    height: 6px;
+    float:right;
+}
+
+span{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.soft-skill{
+    background: #E55926;
+    border-radius: 5px;
+    width: 100%;
+    animation: soft-skill 5s;
+}
+
+@keyframes soft-skill{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+/*INICIO DEL PROGRESS BAR IDIOMA*/
+
+.bar-idioma span{
+    height: 6px;
+    float:right;
+}
