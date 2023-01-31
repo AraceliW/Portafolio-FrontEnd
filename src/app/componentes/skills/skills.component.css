@@ -13,6 +13,10 @@
      letter-spacing: 4px;
 }
 
+.text-muted{
+    font-size: 13px;
+}
+
 .about-border{
     display: block;
     width: 80px;
