@@ -1,5 +1,5 @@
 #logoAP{
-   width: 190px;
+   width: 160px;
    height: 50px;
 }
 
@@ -11,3 +11,15 @@
     padding-right: 1em;
     font-size: 30px;
 }
+
+.nav-login{
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 1em;
+    font-size: 15px;
+}
+
+
+
+
+
