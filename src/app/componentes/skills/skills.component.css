@@ -36,6 +36,7 @@
     letter-spacing: 1px;
 }
 
+
 .border-grey{
     border-color: #696969;
     border-style: solid;
@@ -53,16 +54,11 @@
 
 .bar span{
     height: 6px;
-    float:right;
-}
-
-span{
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    float:left;
 }
 
 .soft-skill{
-    background: #E55926;
+    background: #F1A603;
     border-radius: 5px;
     width: 100%;
     animation: soft-skill 5s;
@@ -76,12 +72,4 @@ span{
     100%{
         width: 100%;
     }
-}
-
-
-/*INICIO DEL PROGRESS BAR IDIOMA*/
-
-.bar-idioma span{
-    height: 6px;
-    float:right;
 }
