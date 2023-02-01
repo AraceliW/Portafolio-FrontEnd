@@ -1,10 +1,10 @@
-.row{
-    padding: 20px;
+.seccion-bg{
+    background-color: #151717;
 }
 
 .font-seccion{
     font-family: 'Poppins', sans-serif;
-   font-weight: bold;
+    font-weight: bold;
     color: white;
     letter-spacing: 4px;
 }
@@ -13,6 +13,10 @@
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.text{
+    letter-spacing: 1px;
 }
 
 .about-border{
@@ -27,18 +31,28 @@
     text-align: center;
  }
 
-.text{
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-}
-
-.text-orange{
+ .text-orange{
     font-family: 'Raleway', sans-serif;
     color: #E55926;
     font-size: 20px;
 }
 
-.seccion-bg{
-    background-color: #151717;
+
+@media(max-width:768px){
+    .educacion-fila{
+        width: 100% !important;
+    }
+}
+
+@media(max-width:576px){
+    .center-sm{
+        text-align: center;
+    }
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }
