@@ -16,6 +16,8 @@
 }
 
 .text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
     letter-spacing: 1px;
 }
 
@@ -23,7 +25,7 @@
     display: block;
     width: 80px;
     height: 3px;
-    background: #E55926;
+    background: #DC8DF2;
     margin: 10px auto;
 }
 
@@ -31,10 +33,17 @@
     text-align: center;
  }
 
- .text-orange{
-    font-family: 'Raleway', sans-serif;
-    color: #E55926;
-    font-size: 20px;
+ .text-color{
+    font-family: 'Open Sans', sans-serif;
+    color: #DC8DF2;
+    font-size:larger;
+}
+
+img{
+    object-fit: cover;
+    object-position: center center;
+    width: 180px;
+    height: 180px;
 }
 
 

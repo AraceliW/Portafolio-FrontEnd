@@ -1,12 +1,8 @@
-.row{
-    padding: 20px;
-}
-
 .font-seccion{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-     color: white;
-     letter-spacing: 4px;
+    color: white;
+    letter-spacing: 4px;
 }
 
 .font-title{
@@ -15,11 +11,17 @@
     letter-spacing: 2px;
 }
 
+.text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
 .about-border{
     display: block;
     width: 80px;
     height: 3px;
-    background: #E55926;
+    background: #DC8DF2;
     margin: 10px auto;
 }
 
@@ -27,11 +29,35 @@
     text-align: center;
  }
 
-.text{
+ .text-color{
     font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
+    color: #DC8DF2;
+    font-size:larger;
 }
 
-.card-bg{
-    background-color: #151717;
+img{
+    object-fit: cover;
+    object-position: center center;
+    width: 180px;
+    height: 180px;
+}
+
+
+@media(max-width:768px){
+    .educacion-fila{
+        width: 100% !important;
+    }
+}
+
+@media(max-width:576px){
+    .center-sm{
+        text-align: center;
+    }
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
 }

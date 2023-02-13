@@ -13,12 +13,19 @@
     display: block;
     width: 80px;
     height: 3px;
-    background: #E55926;
+    background: #DC8DF2;
     margin: 10px auto;
 }
 
 .about h1 {
     text-align: center;
+ }
+
+ img{
+        object-fit: cover;
+        object-position: center center;
+        width: 180px;
+        height: 160px;
  }
 
 
