@@ -1,0 +1,23 @@
+.gradient-custom-2 {
+    background: linear-gradient(to right, #bb86fc, #a97fdd , #a477da, #9c73ce);
+}
+
+.btn-outline-purple{
+    border-color: #bb86fc;
+    color: #bb86fc;
+}
+
+
+
+@media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+}
