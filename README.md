@@ -1,4 +1,4 @@
-#Se completará a medida que avance
+# Se completará a medida que avance
 
 # PortafolioFrontEnd
 
