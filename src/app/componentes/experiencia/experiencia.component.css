@@ -1,5 +1,5 @@
 .seccion-bg{
-    background-color: #151717;
+    background-color:  #885cbd;
 }
 
 .font-seccion{
@@ -10,14 +10,13 @@
 }
 
 .font-title{
-    font-family: 'Raleway', sans-serif;
+    font-family: "Poppins", Sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
 .text{
-    font-family: 'Open Sans', sans-serif;
-    font-size: large;
+    line-height: 1.3em;
     letter-spacing: 1px;
 }
 
@@ -39,12 +38,13 @@
     font-size:larger;
 }
 
-img{
+.size-new{
     object-fit: cover;
     object-position: center center;
-    width: 180px;
-    height: 180px;
+    width: 50px;
+    height: 50px;
 }
+
 
 
 @media(max-width:768px){

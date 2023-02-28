@@ -1,3 +1,8 @@
+.bg-new{
+    background-color: #885cbd;;
+
+}
+
 .font-seccion{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -33,6 +38,7 @@
     font-family: 'Open Sans', sans-serif;
     color: #DC8DF2;
     font-size:larger;
+    font-weight: bold;
 }
 
 img{

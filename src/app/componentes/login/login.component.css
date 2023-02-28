@@ -1,22 +1,39 @@
-.gradient-custom-2 {
-    background: linear-gradient(to right, #bb86fc, #a97fdd , #a477da, #9c73ce);
+.bg-dark-new{
+    background-color: #263238;
 }
 
-.btn-outline-purple{
-    border-color: #bb86fc;
-    color: #bb86fc;
+
+.bg-right{
+    background-color: #885cbd;
 }
 
+.bg-left{
+    background-color: #a56fe7;
+}
+
+.btn-outline-new{
+    background-color: white;
+    color: #885cbd;
+}
+
+.mybtn:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
+
+
+.form-control:focus {
+    box-shadow: none !important;
+}
 
 
 @media (min-width: 768px) {
-    .gradient-form {
+    .formulario {
     height: 100vh !important;
     }
 }
 
 @media (min-width: 769px) {
-    .gradient-custom-2 {
+    .bg-right{
     border-top-right-radius: .3rem;
     border-bottom-right-radius: .3rem;
     }

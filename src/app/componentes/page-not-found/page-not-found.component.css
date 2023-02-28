@@ -2,7 +2,10 @@
     min-height: 100vh;
 }
 
-.btn-outline-color{
-    color: #BB86FC;
-    border-color: #BB86FC;
+.btn-outline-new{
+    background-color: #9268C4;
+}
+
+.mybtn:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }

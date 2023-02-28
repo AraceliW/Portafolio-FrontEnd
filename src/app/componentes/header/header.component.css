@@ -1,10 +1,9 @@
-#banner{
-    padding: 0 50px;
+.fondo-banner{
     background-image: url(../../../assets/banner.png);
-    height: 50vh;
-    max-width: 100%;
     width: 100%;
-    display: block;
-    background-size: cover;
+    height: 100vh;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
