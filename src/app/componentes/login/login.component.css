@@ -1,40 +1,7 @@
-.bg-dark-new{
-    background-color: #263238;
+.bg-login{
+    background-color: #9268C4;
 }
-
-
-.bg-right{
-    background-color: #885cbd;
-}
-
-.bg-left{
-    background-color: #a56fe7;
-}
-
-.btn-outline-new{
-    background-color: white;
-    color: #885cbd;
-}
-
-.mybtn:hover {
-    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
-}
-
 
 .form-control:focus {
     box-shadow: none !important;
-}
-
-
-@media (min-width: 768px) {
-    .formulario {
-    height: 100vh !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .bg-right{
-    border-top-right-radius: .3rem;
-    border-bottom-right-radius: .3rem;
-    }
 }
