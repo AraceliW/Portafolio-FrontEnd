@@ -11,7 +11,7 @@
 }
 
 .font-title{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -41,7 +41,7 @@
     font-weight: bold;
 }
 
-img{
+.img-size{
     object-fit: cover;
     object-position: center center;
     width: 180px;
