@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PortafolioService } from 'src/app/servicios/portafolio.service';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +7,6 @@ import { PortafolioService } from 'src/app/servicios/portafolio.service';
 })
 
 
-export class HeaderComponent implements OnInit{
-  constructor(private datosPortafolio:PortafolioService){}
-  ngOnInit(): void {
-    this.datosPortafolio.obtenerDatos();
-  }
+export class HeaderComponent{
+
 }
