@@ -8,21 +8,28 @@
             <div class="about-border rounded"></div>
         </div>
 
+
         <div class="row align-items-center justify-content-center m-0">  
                 <img src="../../../assets/Ilustraciones/experiencia.svg" alt="Experiencia" style="width: 300px; height: 300px;">
+                <i class="bi bi-plus" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
         </div>
+
 
         
-    
-        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start text my-3 icono-wrap text-light">
-            <img src="../../../assets/logo-experiencia.png" class="mt-3 rounded size-new" alt="Logo institucion">
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start text my-3 icono-wrap text-light" *ngFor="let experiencia of experiencias">
+            <img [src]="experiencia.imgExp" class="mt-3 rounded size-new" [alt]="experiencia.nombreExperiencia">
             <div>
-                <h3 class="font-title px-4 fs-4 text-uppercase mt-3 center-sm">Puesto</h3>
-                <h6 class="px-4 py-1 center-sm">Lugar de trabajo</h6>
-                <p class="px-4">La falta de experiencia no es falta de capacidad, todos tenemos habilidades y competencias para ponerlas al servicio y generar un resultado.</p>
-                <p class="px-4 center-sm">2023</p>
+                <h3 class="font-title px-4 fs-4 text-uppercase mt-3 center-sm">{{experiencia.nombreExperiencia}}</h3>
+                <h6 class="px-4 py-1 center-sm">{{experiencia.compania}}</h6>
+                <p class="px-4">{{experiencia.descripcionExperiencia}}</p>
+                <p class="px-4 center-sm">{{experiencia.startExp}} - {{experiencia.endExp}}</p>
+            </div>
+
+            <div class="iconos-edicion">
+                <i class="bi bi-pencil" *ngIf="isLogged" (click)="openDialogEdit(experiencia.id)"></i>
+                <i class="bi bi-trash" *ngIf="isLogged" (click)="delete(experiencia.id)"></i>
             </div>
         </div>
-
+        
     </div>
 </div>

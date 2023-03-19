@@ -16,8 +16,22 @@ import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './componentes/page-not-found/page-not-found.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { interceptorProvider } from './servicios/interceptor-service';
+import { MdalExperienciaComponent } from './componentes/experiencia/mdal-experiencia/mdal-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia/edit-experiencia.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 
 @NgModule({
@@ -34,13 +48,25 @@ import { interceptorProvider } from './servicios/interceptor-service';
     HomeComponent,
     LoginComponent,
     PageNotFoundComponent,
+    MdalExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,
     NgCircleProgressModule.forRoot({}),
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    CommonModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSliderModule,
+    BrowserAnimationsModule
   ],
   providers: [
     interceptorProvider
