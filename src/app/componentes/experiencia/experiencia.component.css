@@ -13,6 +13,7 @@
     font-family: "Poppins", Sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+    
 }
 
 .text{
@@ -46,6 +47,23 @@
 }
 
 
+.iconos-edicion {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+.iconos-edicion i {
+    margin: 10px 5px;
+    align-self: flex-start;
+}
+
+i {
+    font-size: 1em;
+    transition: .4s;
+  }
+
 
 @media(max-width:768px){
     .educacion-fila{
@@ -63,5 +81,12 @@
     .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .iconos-edicion {
+        margin-top: 10px;
     }
 }
