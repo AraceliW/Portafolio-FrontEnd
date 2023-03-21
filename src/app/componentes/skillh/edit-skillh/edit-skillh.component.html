@@ -1,0 +1,23 @@
+<div class="text-dark">
+<form novalidate #f="ngForm">
+    <h2 mat-dialog-title>EDITAR HARD SKILL</h2>
+    <div class="form-container">
+
+        <label for="nombreSkillH">Nombre de la habilidad
+            <input type="text" id="nombreSkillH" name="nombreSkillH" placeholder="Ej: HTML"
+                [(ngModel)]="skillh.nombreSkillH" required />
+        </label>
+        <label for="porcentajeSkillH">Nivel de habilidad
+            <mat-slider thumbLabel [displayWith]="formatLabel" step="5" min="0" max="100" aria-label="units"
+                id="porcentajeSkillH" name="porcentajeSkillH" step="5" [(ngModel)]="skillh.porcentajeSkillH" required>
+            </mat-slider>
+        </label>
+    </div>
+
+
+    <div mat-dialog-actions class="form-container__btn">
+        <button mat-button (click)="onNoClick()">Cancelar</button>
+        <button mat-button cdkFocusInitial class="send-button" (click)="onUpdate(data.id)">Actualizar</button>
+    </div>
+</form>
+</div>

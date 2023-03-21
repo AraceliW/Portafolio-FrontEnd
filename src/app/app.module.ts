@@ -36,6 +36,8 @@ import { ModalProyectosComponent } from './componentes/proyectos/modal-proyectos
 import { SkillhComponent } from './componentes/skillh/skillh.component';
 import { EditSkillsComponent } from './componentes/skills/edit-skills/edit-skills.component';
 import { ModalSkillsComponent } from './componentes/skills/modal-skills/modal-skills.component';
+import { ModalSkillhComponent } from './componentes/skillh/modal-skillh/modal-skillh.component';
+import { EditSkillhComponent } from './componentes/skillh/edit-skillh/edit-skillh.component';
 
 
 
@@ -64,6 +66,8 @@ import { ModalSkillsComponent } from './componentes/skills/modal-skills/modal-sk
     SkillhComponent,
     EditSkillsComponent,
     ModalSkillsComponent,
+    ModalSkillhComponent,
+    EditSkillhComponent,
   ],
   imports: [
     BrowserModule,
