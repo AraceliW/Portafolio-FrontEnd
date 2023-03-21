@@ -19,27 +19,17 @@
             <div>
                 <h3 class="text-light fs-5 py-3 px-4">{{educacion.nombreEducacion}}</h3>
                 <p class="text-light px-4">{{educacion.establecimiento}}</p>
-                <p class="text-light px-4">{{educacion.startEducacion}} - {{educacion.endEducacion}}/p>
+                <p class="text-light px-4">{{educacion.startEducacion}} - {{educacion.endEducacion}}</p>
             </div>
 
 
             <div class="iconos-edicion">
-                <i class="bi bi-pencil-fill" *ngIf="isLogged" (click)="openDialogEdit(educacion.id)"></i>
-                <i class="bi bi-trash-fill" *ngIf="isLogged" (click)="delete(educacion.id)"></i>
+                <i class="bi bi-pencil-fill text-light" *ngIf="isLogged" (click)="openDialogEdit(educacion.id)"></i>
+                <i class="bi bi-trash-fill text-light" *ngIf="isLogged" (click)="delete(educacion.id)"></i>
             </div>
         </div>
 
 
-        <!-- Aqui quedaba doble la columna por que habia dos
-             <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
-            <img src="../../../assets/logo-argprog.png" class="rounded" alt="Logo institucion">
-            <div>
-                <h3 class="text-light fs-5 py-3 px-4">Full Stack Developer Jr.</h3>
-                <p class="text-light px-4">Argentina Programa - INTI</p>
-                <p class="text-light px-4">2022-2023</p>
-            </div>
-        </div>
-
-        -->
+      
     </div>
 </div>

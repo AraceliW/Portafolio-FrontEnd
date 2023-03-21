@@ -10,15 +10,15 @@
     <h4 class="text-center pt-4 m-2 title-skill">HARD SKILL</h4>
 
     <div class="row align-items-center justify-content-center m-0">  
-        <i class="bi bi-plus-circle-fill text-light" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+        <i class="bi bi-plus-circle-fill" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
     </div>
 
     <div class="row">
         <div class="col-12 my- text-center" *ngFor="let skill of skillh">
 
             <div>
-                <i class="bi bi-pencil-fill" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
-                <i class="bi bi-trash-fill" *ngIf="isLogged" (click)="delete(skill.id)"></i>
+                <i class="bi bi-pencil-fill text-dark" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
+                <i class="bi bi-trash-fill text-dark" *ngIf="isLogged" (click)="delete(skill.id)"></i>
             </div>
 
             <circle-progress
