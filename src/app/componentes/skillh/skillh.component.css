@@ -1,0 +1,31 @@
+.row{
+    padding: 20px;
+}
+
+.font-seccion{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #494949;
+    letter-spacing: 4px;
+}
+
+
+.about-border{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #BB86FC;
+    margin: 10px auto;
+}
+
+.about h1 {
+    text-align: center;
+ }
+
+
+.title-skill{
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
+}

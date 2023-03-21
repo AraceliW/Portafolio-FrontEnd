@@ -25,12 +25,32 @@
     text-align: center;
  }
 
+
  img{
-        object-fit: cover;
-        object-position: center center;
-        width: 180px;
-        height: 160px;
+    object-fit: cover;
+    object-position: center center;
+    width: 180px;
+    height: 160px;
  }
+
+
+ .iconos-edicion {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+.iconos-edicion i {
+    margin: 10px 5px;
+    align-self: flex-start;
+}
+
+
+i {
+    font-size: 1em;
+    transition: .4s;
+  }
 
 
 @media(max-width:768px){
@@ -44,5 +64,12 @@
     .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .iconos-edicion {
+        margin-top: 10px;
     }
 }

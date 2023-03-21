@@ -4,7 +4,7 @@
         <div class="form-container">
             
             <label for="nombreExperiencia">Nombre del puesto
-                <input type="text" id="nombreExperiencia" name="nombreExperiencia" placeholder="Ej: Gerente" [(ngModel)]="nombreExperiencia" required/>
+                <input type="text" id="nombreExperiencia" name="nombreExperiencia" placeholder="Ej: Front-end Developer" [(ngModel)]="nombreExperiencia" required/>
             </label>
             <label for="compania">Nombre de la empresa
                 <input type="text" id="compania" name="compania" placeholder="Ej: Google" [(ngModel)]="compania" required/>
@@ -13,14 +13,14 @@
                 <input type="number" id="startExp" name="startExp" placeholder="Sólo el año" [(ngModel)]="startExp" required/>
             </label>
             <label for="endExp">Fecha de fin
-                <input type="text" id="endExp" name="endExp" placeholder="Sólo el año" [(ngModel)]="endExp" required/>
+                <input type="number" id="endExp" name="endExp" placeholder="Sólo el año" [(ngModel)]="endExp" required/>
             </label>
             <label for="imgExp">Imagen
                 <input type="url" id="imgExp" name="imgExp" placeholder="Carga la URL" [(ngModel)]="imgExp" required/>
             </label>
             <label for="descripcionExperiencia">Descripción de las tareas
                 <textarea id="descripcionExperiencia" name="descripcionExperiencia"
-                    placeholder="Ej: Desarrollé una app para Google" maxlength="1000" [(ngModel)]="descripcionExperiencia" required></textarea>
+                    placeholder="Ej: Implementé diseños y conceptos de diseño en código HTML, CSS y JavaScript." maxlength="1000" [(ngModel)]="descripcionExperiencia" required></textarea>
             </label>
         </div>
 

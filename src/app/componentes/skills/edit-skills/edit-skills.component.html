@@ -1,0 +1,19 @@
+<div class="text-dark">
+<form novalidate #f="ngForm">
+    <h2 mat-dialog-title>EDITAR SOFT SKILL</h2>
+    <div class="form-container">
+
+        <label for="nombreSkill">Nombre de la habilidad
+            <input type="text" id="nombreSkill" name="nombreSkill" placeholder="Ej: Trabajo en equipo"
+                [(ngModel)]="skills.nombreSkill" required />
+        </label>
+
+    </div>
+
+
+    <div mat-dialog-actions class="form-container__btn">
+        <button mat-button (click)="onNoClick()">Cancelar</button>
+        <button mat-button cdkFocusInitial class="send-button" (click)="onUpdate(data.id)">Actualizar</button>
+    </div>
+</form>
+</div>

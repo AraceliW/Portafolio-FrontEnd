@@ -18,10 +18,16 @@ export class ExperienciaComponent implements OnInit {
   
     experiencias: Experiencia[];
 
-    constructor(private service: ExperienciaService, private tokenService: TokenService,  public dialog: MatDialog, private snackbar: MatSnackBar) { this.experiencias = []; }
+    constructor(private service: ExperienciaService,
+                private tokenService: TokenService,  
+                public dialog: MatDialog, 
+                private snackbar: MatSnackBar
+                ) { this.experiencias = []; }
 
 
     isLogged = false;
+
+
 
     ngOnInit(): void {
       this.cargarExperiencia();
@@ -33,9 +39,12 @@ export class ExperienciaComponent implements OnInit {
     }
 
   
+
     cargarExperiencia(): void {
       this.service.lista().subscribe(data => { this.experiencias = data;});
     }
+
+
 
 
     delete(id: any): void {
@@ -57,6 +66,8 @@ export class ExperienciaComponent implements OnInit {
       }
     }
   
+
+
     openDialogNew(): void {
       const dialogRef = this.dialog.open(MdalExperienciaComponent, {
         width: '500px',
@@ -68,6 +79,8 @@ export class ExperienciaComponent implements OnInit {
       });
     }
   
+
+    
     openDialogEdit(id: any): void {
       const dialogRef = this.dialog.open(EditExperienciaComponent, {
         width: '500px',

@@ -29,6 +29,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion/edit-educacion.component';
+import { ModalEducacionComponent } from './componentes/educacion/modal-educacion/modal-educacion.component';
+import { EditProyectosComponent } from './componentes/proyectos/edit-proyectos/edit-proyectos.component';
+import { ModalProyectosComponent } from './componentes/proyectos/modal-proyectos/modal-proyectos.component';
+import { SkillhComponent } from './componentes/skillh/skillh.component';
+import { EditSkillsComponent } from './componentes/skills/edit-skills/edit-skills.component';
+import { ModalSkillsComponent } from './componentes/skills/modal-skills/modal-skills.component';
 
 
 
@@ -50,6 +57,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PageNotFoundComponent,
     MdalExperienciaComponent,
     EditExperienciaComponent,
+    EditEducacionComponent,
+    ModalEducacionComponent,
+    EditProyectosComponent,
+    ModalProyectosComponent,
+    SkillhComponent,
+    EditSkillsComponent,
+    ModalSkillsComponent,
   ],
   imports: [
     BrowserModule,

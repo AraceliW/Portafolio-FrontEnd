@@ -1,181 +1,26 @@
 <div class="container-fluid py-5 bg-white">
-    <div class="about">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="font-seccion fs-2 pt-4">HABILIDADES DE DESARROLLO</h1>
-        </div>
-        <div class="about-border rounded"></div>
-    </div>
-
-     <!--HARD SKILL-->
-    <h4 class="text-center pt-4 m-2 title-skill">HARD SKILL</h4>
-    <div class="row">
-        <div class="col-12 my- text-center">
-
-            <circle-progress
-            [percent]="40"
-            [title]="'HTML5'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'40%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-            <circle-progress
-            [percent]="40"
-            [title]="'CSS'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'40%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-            <circle-progress
-            [percent]="30"
-            [title]="'JS'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'30%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-            <circle-progress
-            [percent]="40"
-            [title]="'BOOTSTRAP'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'40%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-            <circle-progress
-            [percent]="30"
-            [title]="'ANGULAR'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'30%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-            <circle-progress
-            [percent]="40"
-            [title]="'GIT'"
-            [titleColor]="'#9268C4'"
-            [showTitle]="true"
-            [titleFontSize]="'25px'"
-            [showUnits]="false"
-            [subtitle]="'40%'"
-            [subtitleFontSize]="'20px'"
-            [showSubtitle]="true"
-            [radius]="90"
-            [outerStrokeWidth]="13"
-            [space]="-13"
-            [innerStrokeWidth]="13"
-            [outerStrokeColor]="'#9268C4'"
-            [innerStrokeColor]="'#EEEEEE'"
-            [animation]="true"
-            [animationDuration]="700"
-            [backgroundPadding]="20"
-            ></circle-progress>
-
-        </div>
-    </div>
-
-    <div class="row align-items-center justify-content-center m-0 pt-0">  
-        <img src="../../../assets/Ilustraciones/skills.svg" alt="Experiencia" style="width: 300px; height: 300px;">
-    </div>
-
-        <!--SOFT SKILL-->
     <div class="row align-items-start text-center p-2 mb-5 text-uppercase">
             <div>
                 <h4 class="p-2 m-2 title-skill">SOFT SKILL</h4>
             </div>
 
 
-                <!--SKILL 1-->
-                <div class="col color-font-skills p-4 m-2">Trabajo en equipo
-                    <p class="text-muted">100%</p>
-                    <div class="bar"><span class="soft-skill"></span></div>
-                </div>
-                
+        <div class="row align-items-center justify-content-center m-0">  
+                <i class="bi bi-plus-circle-fill text-light" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+        </div>
 
-                <!--SKILL 2-->
-                <div class="col color-font-skills p-4 m-2">Responsabilidad
-                    <p class="text-muted">100%</p>
-                    <div class="bar"><span class="soft-skill"></span></div>
-                </div>
+            <!--SKILL 1-->
+            <div class="col color-font-skills p-4 m-2" *ngFor="let skill of skills">{{skill.nombreSkill}}
+                <p class="text-muted">100%</p>
+                <div class="bar"><span class="soft-skill"></span></div>
 
 
-                <!--SKILL 3-->
-                <div class="col color-font-skills p-4 m-2">Creatividad
-                    <p class="text-muted">100%</p>
-                    <div class="bar"><span class="soft-skill"></span></div>
+                <div class="iconos-edicion">
+                    <i class="bi bi-pencil-fill" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
+                    <i class="bi bi-trash-fill" *ngIf="isLogged" (click)="delete(skill.id)"></i>
                 </div>
 
+            </div>
 
-                <!--SKILL 4-->
-                <div class="col color-font-skills p-4 m-2">Adaptacion
-                    <p class="text-muted">100%</p>
-                    <div class="bar"><span class="soft-skill"></span></div>
-                </div>
-               
+    </div>
 </div>
