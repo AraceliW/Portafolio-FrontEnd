@@ -10,20 +10,20 @@
     <h4 class="text-center pt-4 m-2 title-skill">HARD SKILL</h4>
 
     <div class="row align-items-center justify-content-center m-0">  
-        <i class="bi bi-plus-circle-fill" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+        <i class="bi bi-plus-circle-fill color-font-skills" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
     </div>
 
     <div class="row">
-        <div class="col-12 my- text-center" *ngFor="let skill of skillh">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center" *ngFor="let skill of skillh">
 
-            <div>
-                <i class="bi bi-pencil-fill text-dark" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
-                <i class="bi bi-trash-fill text-dark" *ngIf="isLogged" (click)="delete(skill.id)"></i>
+            <div class="iconos-edicion">
+                <i class="bi bi-pencil-fill color-font-skills px-2" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
+                <i class="bi bi-trash-fill color-font-skills" *ngIf="isLogged" (click)="delete(skill.id)"></i>
             </div>
 
             <circle-progress
             [percent]="skill.porcentajeSkillH"
-            [title]="skill.nombreSkillH"
+            [title]="skill.nombreSkillH | uppercase"
             [titleColor]="'#9268C4'"
             [showTitle]="true"
             [titleFontSize]="'25px'"
@@ -49,7 +49,7 @@
 
     <!--Imagen de separor-->
     <div class="row align-items-center justify-content-center m-0 pt-0">  
-        <img src="../../../assets/Ilustraciones/skills.svg" alt="Experiencia" style="width: 300px; height: 300px;">
+        <img src="../../../assets/Ilustraciones/skills.svg" alt="Imagen de adorno - chica con computadora" style="width: 300px; height: 300px;">
     </div>    
     
     

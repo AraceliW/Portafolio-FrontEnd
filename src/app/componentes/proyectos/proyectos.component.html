@@ -17,7 +17,7 @@
 
         <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start align-items-center mt-2 mb-3 icono-wrap pb-3" *ngFor="let proyecto of proyectos">
             <a [href]="proyecto.url" target="_blank">
-                <img [src]="proyecto.imgProyecto" class="mt-3 rounded img-size" [alt]="proyecto.nombreProyecto">
+                <img [src]="proyecto.imgProyecto" class="mt-3 rounded img-size" [alt]="'Imagen de mi proyecto llamado' + proyecto.nombreProyecto">
             </a>
 
             <div class="text-light">

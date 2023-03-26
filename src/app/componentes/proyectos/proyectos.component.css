@@ -34,6 +34,14 @@
     text-align: center;
  }
 
+ .iconos-edicion {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
  .text-color{
     font-family: 'Open Sans', sans-serif;
     color: #DC8DF2;

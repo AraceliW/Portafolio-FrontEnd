@@ -10,6 +10,17 @@
 }
 
 
+.color-font-skills{
+    color: #9268C4;
+}
+
+.iconos-edicion {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .about-border{
     display: block;
     width: 80px;

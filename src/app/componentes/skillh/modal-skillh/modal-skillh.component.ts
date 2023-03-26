@@ -17,6 +17,9 @@ export class ModalSkillhComponent implements OnInit {
   nombreSkillH: string = '';
   porcentajeSkillH: number = 0;
 
+  //Solo para el control de datos esteticos
+  errorNombreSkillH: boolean = false;
+
   constructor(
     public dialogRef: MatDialogRef<ModalSkillhComponent>,
     private service: SkillhService,
@@ -32,6 +35,9 @@ export class ModalSkillhComponent implements OnInit {
 
 
   onCreate(): void {
+
+    this.validarLongitudNombreSkillH(); // validar la longitud del nombre de habilidad
+    if (!this.errorNombreSkillH) { // si no hay error de longitud
     const skill = new Skillh(this.nombreSkillH, this.porcentajeSkillH);
     this.service.save(skill).subscribe(data => {
       this.dialogRef.close();
@@ -45,7 +51,13 @@ export class ModalSkillhComponent implements OnInit {
         verticalPosition: 'bottom'
       })
     })
+  } else {
+    this.snackBar.open(`El nombre de la habilidad debe tener menos de 10 caracteres.`, 'Cerrar', {
+      duration: 2000,
+      verticalPosition: 'bottom'
+    })
   }
+}
 
 
 
@@ -57,6 +69,16 @@ export class ModalSkillhComponent implements OnInit {
 
   formatLabel(value: number) {
     return value + '%';
+  }
+
+
+  //VALIDACION DE ENTRADA POR TEMAS ESTETICOS
+  validarLongitudNombreSkillH() {
+    if (this.nombreSkillH && this.nombreSkillH.length > 10) {
+      this.errorNombreSkillH = true;
+    } else {
+      this.errorNombreSkillH = false;
+    }
   }
 
 

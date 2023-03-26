@@ -5,12 +5,13 @@
 
         <label for="nombreSkillH">Nombre de la habilidad
             <input type="text" id="nombreSkillH" name="nombreSkillH" placeholder="Ej: HTML"
-                [(ngModel)]="skillh.nombreSkillH" required />
+                [(ngModel)]="skillh.nombreSkillH" (keyup)="validarLongitudNombreSkillH()" required />
         </label>
+        <div *ngIf="errorNombreSkillH" class="text-danger">El nombre de la habilidad debe tener menos de 10 caracteres.</div>
+
         <label for="porcentajeSkillH">Nivel de habilidad
-            <mat-slider thumbLabel [displayWith]="formatLabel" step="5" min="0" max="100" aria-label="units"
-                id="porcentajeSkillH" name="porcentajeSkillH" step="5" [(ngModel)]="skillh.porcentajeSkillH" required>
-            </mat-slider>
+                <input type="number" id="porcentajeSkillH" name="porcentajeSkillH" placeholder="Ej:80" min="0" max="100" step="5"
+                [(ngModel)]="skillh.porcentajeSkillH" required>
         </label>
     </div>
 

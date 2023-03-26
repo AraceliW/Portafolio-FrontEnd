@@ -6,7 +6,7 @@
 
 
         <div class="row align-items-center justify-content-center m-0">  
-                <i class="bi bi-plus-circle-fill" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
+                <i class="bi bi-plus-circle-fill color-font-skills" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
         </div>
 
             <!--SKILL 1-->
@@ -15,8 +15,8 @@
                 <div class="bar"><span class="soft-skill"></span></div>
 
 
-                <div class="iconos-edicion">
-                    <i class="bi bi-pencil-fill" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
+                <div class="iconos-edicion py-2">
+                    <i class="bi bi-pencil-fill px-2" *ngIf="isLogged" (click)="openDialogEdit(skill.id)"></i>
                     <i class="bi bi-trash-fill" *ngIf="isLogged" (click)="delete(skill.id)"></i>
                 </div>
 

@@ -10,14 +10,14 @@
 
 
         <div class="row align-items-center justify-content-center m-0">  
-                <img src="../../../assets/Ilustraciones/experiencia.svg" alt="Experiencia" style="width: 300px; height: 300px;">
+                <img src="../../../assets/Ilustraciones/experiencia.svg" alt="Imagen de adorno - chica con computadora" style="width: 300px; height: 300px;">
                 <i class="bi bi-plus-circle-fill text-light" mat-button (click)="openDialogNew()" *ngIf="isLogged"></i>
         </div>
 
 
         
         <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-start text my-3 icono-wrap text-light" *ngFor="let experiencia of experiencias">
-            <img [src]="experiencia.imgExp" class="mt-3 rounded size-new" [alt]="experiencia.nombreExperiencia">
+            <img [src]="experiencia.imgExp" class="mt-3 rounded size-new" [alt]="'Logo de ' + experiencia.compania + 'durante mi experiencia laboral en ' + experiencia.nombreExperiencia">
             <div>
                 <h3 class="font-title px-4 fs-4 text-uppercase mt-3 center-sm">{{experiencia.nombreExperiencia}}</h3>
                 <h6 class="px-4 py-1 center-sm">{{experiencia.compania}}</h6>

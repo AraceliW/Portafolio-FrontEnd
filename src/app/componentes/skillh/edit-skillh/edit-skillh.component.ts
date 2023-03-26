@@ -14,6 +14,7 @@ import { SkillhService } from 'src/app/servicios/skillh.service';
 export class EditSkillhComponent implements OnInit {
 
   skillh: Skillh = new Skillh("", 0);
+  errorNombreSkillH: boolean = false;
 
   constructor(
     private service: SkillhService,
@@ -38,6 +39,8 @@ export class EditSkillhComponent implements OnInit {
 
 
   onUpdate(id: any): void {
+    this.validarLongitudNombreSkillH(); // validar la longitud del nombre de habilidad
+    if (!this.errorNombreSkillH) { // si no hay error de longitud
     this.service.update(id, this.skillh).subscribe(data => {
       this.dialogRef.close();
       this._snackBar.open(`Skills actualizado correctamente`, 'Cerrar', {
@@ -50,7 +53,13 @@ export class EditSkillhComponent implements OnInit {
         verticalPosition: 'bottom'
       })
     })
+  }  else {
+    this._snackBar.open(`El nombre de la habilidad debe tener menos de 10 caracteres.`, 'Cerrar', {
+      duration: 2000,
+      verticalPosition: 'bottom'
+    })
   }
+} 
 
 
   onNoClick(): void {
@@ -61,5 +70,17 @@ export class EditSkillhComponent implements OnInit {
   formatLabel(value: number) {
     return value + '%';
   }
+
+
+   //VALIDACION DE ENTRADA POR TEMAS ESTETICOS
+   validarLongitudNombreSkillH() {
+    if (this.skillh.nombreSkillH && this.skillh.nombreSkillH.length > 10) {
+      this.errorNombreSkillH = true;
+    } else {
+      this.errorNombreSkillH = false;
+    }
+  }
+  
+
 
 }

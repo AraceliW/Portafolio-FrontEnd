@@ -1,29 +1,63 @@
-# Se completará a medida que avance
+# 💻 PORTFOLIO WEB | ARGENTINA PROGRAMA
 
-# PortafolioFrontEnd
+## 📍 OBJETIVO DEL PROYECTO
+El objetivo de este proyecto es crear un portafolio web que muestre mis datos personales, proyectos, estudios cursados, experiencia laboral y mis conocimiento de las tecnologias.La idea es que, ademas de servirme para aplicar lo aprendido en este curso, pueda publicar el portfolio web y usarlo como carta de presentacion en el mercado laboral.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
-## Development server
+## ARQUITECTURA Y DISEÑO DE LA APLICACIÓN
+La aplicación se basa en una arquitectura distribuida y cuenta con un diseño de interfaz de usuario intuitivo que facilita la navegación y la presentación de información clara. Además, se implementa una base de datos para almacenar los datos y se utiliza las API's necesarias para proveer información a través de internet.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El diseño de la aplicación se ha optimizado para ser responsive, lo que significa que la interfaz de usuario se adapta automáticamente al tamaño de la pantalla del dispositivo utilizado para su visualización.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## FRONT END 🎨
+Este repositorio contiene la capa front-end de mi portafolio de mi trabajo final para #YoProgramo.
 
-## Build
+## VISTA PREVIA
+Aqui me falta agregar la imagen xd
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## TECNOLOGIAS USADAS 🔍
+- HTML 5
+- CSS 3
+- TypeScript 4.8.2
+- Bootstrap 5.2.3
+- Angular 15.0.0
 
-## Running end-to-end tests
+### LIBRERIAS PRINCIPALMENTE USADAS
+- Bootstrap icons 1.10.3
+- Angular Material 15.2.3
+- Circle Progress 1.7.1
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## SECCIONES 💼
+- Header
+- Acerca de mi
+- Experiencia
+- Educacion
+- Hard Skills
+- Soft Skills
+- Proyectos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## INSTRUCCIONES DE USO 🚀
+### Usarlo
+- Clona este repositorio: 
+    `git clone https://github.com/AraceliW/Portafolio-FrontEnd.git`
+- Instala las dependencias: 
+    `ng server`
+- Compila y monta el proyecto utilizando el comando: 
+    `ng serve`
+
+Asegurate de tener corriendo un servidor con el backend para que los datos viajen correctamente entre la base de datos.
+
+### Acceso de edición de contenido
+Mi portafolio web incluye una funcionalidad de login para que puedas editar y actualizar la información que aparece en el sitio. Para poder editar el contenido debés acceder desde el ícono de logueao con el usario y password específico.
+
+### Edición de contenido
+Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del sitio y editar la información correspondiente.
+
+
+### ESTADO  🚧
+Actualmente este proyecto se encuentra en proceso de desarrollo y se irá actualizando conforme se agreguen nuevas funcionalidades y mejoras. 🔜
