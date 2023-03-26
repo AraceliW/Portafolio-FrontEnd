@@ -1,7 +1,7 @@
 # 💻 PORTFOLIO WEB | ARGENTINA PROGRAMA
 
 ## 📍 OBJETIVO DEL PROYECTO
-El objetivo de este proyecto es crear un portafolio web que muestre mis datos personales, proyectos, estudios cursados, experiencia laboral y mis conocimiento de las tecnologias.La idea es que, ademas de servirme para aplicar lo aprendido en este curso, pueda publicar el portfolio web y usarlo como carta de presentacion en el mercado laboral.
+El objetivo de este proyecto es crear un portafolio web que muestre mis datos personales, proyectos, estudios cursados, experiencia laboral y mis conocimiento de las tecnologias. La idea es que, ademas de servirme para aplicar lo aprendido en este curso, pueda publicar el portfolio web y usarlo como carta de presentacion en el mercado laboral.
 
 
 ## ARQUITECTURA Y DISEÑO DE LA APLICACIÓN
