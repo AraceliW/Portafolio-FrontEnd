@@ -1,3 +1,7 @@
-<div class="fondo-banner">
-    <app-navbar></app-navbar> 
+<div class="fondo-banner" [style.background-image]="'url(' + header.bannerPersona + ')'" >
+    <app-navbar></app-navbar>
+
+    <div class="d-flex justify-content-center align-items-center position-relative" style="height: 100%">
+        <i class="bi bi-pencil-fill color-font-skills position-absolute" *ngIf="isLogged" (click)="openDialogEdit()" style="top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem;"></i>
+    </div>
 </div>

@@ -1,0 +1,17 @@
+<div class="text-dark">
+    <form novalidate #f="ngForm">
+        <h2 mat-dialog-title>EDITAR BANNER</h2>
+        <div class="form-container">
+            
+            <label for="bannerPersona">URL de tu banner
+                <input type="url" id="bannerPersona" name="bannerPersona" placeholder="Carga la URL"
+                    [(ngModel)]="header.bannerPersona" required />
+            </label>
+    
+        </div>
+        <div mat-dialog-actions class="form-container__btn">
+            <button mat-button (click)="onNoClick()">Cancelar</button>
+            <button mat-button cdkFocusInitial class="send-button text-light" (click)="onUpdate(data.id)">Actualizar</button>
+        </div>
+    </form>
+</div>

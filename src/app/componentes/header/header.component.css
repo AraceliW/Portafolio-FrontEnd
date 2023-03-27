@@ -1,9 +1,12 @@
 .fondo-banner{
-    background-image: url(../../../assets/banner.png);
     width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.color-font-skills{
+    color: #9268C4;
 }
