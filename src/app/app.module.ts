@@ -38,6 +38,7 @@ import { EditSkillsComponent } from './componentes/skills/edit-skills/edit-skill
 import { ModalSkillsComponent } from './componentes/skills/modal-skills/modal-skills.component';
 import { ModalSkillhComponent } from './componentes/skillh/modal-skillh/modal-skillh.component';
 import { EditSkillhComponent } from './componentes/skillh/edit-skillh/edit-skillh.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de/edit-acerca-de.component';
 
 
 
@@ -68,6 +69,7 @@ import { EditSkillhComponent } from './componentes/skillh/edit-skillh/edit-skill
     ModalSkillsComponent,
     ModalSkillhComponent,
     EditSkillhComponent,
+    EditAcercaDeComponent,
   ],
   imports: [
     BrowserModule,

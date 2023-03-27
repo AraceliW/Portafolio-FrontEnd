@@ -1,0 +1,38 @@
+<div class="text-dark">
+    <form novalidate #f="ngForm">
+        <h2 mat-dialog-title>EDITAR TUS DATOS</h2>
+        <div class="form-container">
+    
+            <label for="nombrePersona">Nombre/s
+                <input type="text" id="nombrePersona" name="nombrePersona" placeholder="Ej: Araceli Aylen"
+                    [(ngModel)]="persona.nombrePersona" required />
+            </label>
+    
+            <label for="apellidoPersona">Apellido/s
+                <input type="text" id="apellidoPersona" name="puestoPersona" placeholder="Ej: Lopez"
+                    [(ngModel)]="persona.apellidoPersona" required />
+            </label>
+    
+            <label for="tituloPersona">Titulo que posees
+                <input type="text" id="tituloPersona" name="tituloPersona" placeholder="Analista programador Universitario"
+                    [(ngModel)]="persona.tituloPersona" required />
+            </label>
+            
+            <label for="imgPersona">URL de tu foto de perfil
+                <input type="url" id="imgPersona" name="imgPersona" placeholder="Carga la URL"
+                    [(ngModel)]="persona.imgPersona" required />
+            </label>
+    
+            <label for="descripcionPersona">Descripción sobre ti
+                <textarea id="descripcionPersona" name="descripcionPersona" maxlength="1000" placeholder="Ej: Soy una persona proactiva que busca..."
+                    [(ngModel)]="persona.descripcionPersona" required></textarea>
+            </label>
+    
+        </div>
+        <div mat-dialog-actions class="form-container__btn">
+            <button mat-button (click)="onNoClick()">Cancelar</button>
+            <button mat-button cdkFocusInitial class="send-button text-light" (click)="onUpdate(data.id)">Actualizar</button>
+        </div>
+    </form>
+</div>
+
