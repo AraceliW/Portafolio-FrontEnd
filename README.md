@@ -14,10 +14,10 @@ El diseño de la aplicación se ha optimizado para ser responsive, lo que signif
 Este repositorio contiene la capa front-end de mi portafolio de mi trabajo final para #YoProgramo.
 
 ## Backend 💻
-Puedes ver el repositorio del backend en el siguiente enlace: https://github.com/AraceliW/Portafolio-BackEnd
+Puedes ver el repositorio del back-end en el siguiente enlace: https://github.com/AraceliW/Portafolio-BackEnd
 
 ## VISTA PREVIA
-Aqui me falta agregar la imagen xd
+![Imagen de la web completa](https://drive.google.com/uc?export=download&id=11xBt4DXi6Niz8A95STCHWtJlIOm2xyuA)
 
 
 
