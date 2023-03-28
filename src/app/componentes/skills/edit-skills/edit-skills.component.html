@@ -8,6 +8,12 @@
                 [(ngModel)]="skills.nombreSkill" required />
         </label>
 
+        <label for="porcentajeSkillS">Nivel de habilidad
+            <input type="number" id="porcentajeSkillS" name="porcentajeSkillS" placeholder="Ej:80" min="0" max="100" step="5"
+            [(ngModel)]="skills.porcentajeSkillS" required>
+            <span *ngIf="skills.porcentajeSkillS < 0 || skills.porcentajeSkillS > 100" class="warning-message">El valor debe estar entre 0 y 100</span>
+        </label>
+
     </div>
 
 

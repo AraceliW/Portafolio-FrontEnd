@@ -15,7 +15,7 @@ import { SkillsService } from 'src/app/servicios/skills.service';
 
 export class EditSkillsComponent implements OnInit {
 
-  skills: Skill = new Skill("");
+  skills: Skill = new Skill("", 0);
 
   constructor(
     private service: SkillsService,
@@ -41,25 +41,43 @@ export class EditSkillsComponent implements OnInit {
 
 
   onUpdate(id: any): void {
-    this.service.update(id, this.skills).subscribe(data => {
-      this.dialogRef.close();
-      this._snackBar.open(`Skills actualizado correctamente`, 'Cerrar', {
-        duration: 2000,
-        verticalPosition: 'bottom'
-      })
-    }, error => {
-      this._snackBar.open(`Error al actualizar skill: ${error.error.mensaje}`, 'Cerrar', {
-        duration: 2000,
-        verticalPosition: 'bottom'
-      })
-    })
-  }
+    // Verificar que el valor de porcentajeSkillS esté entre 0 y 100
+    if (this.skills.porcentajeSkillS >= 0 && this.skills.porcentajeSkillS <= 100) {
+        this.service.update(id, this.skills).subscribe(data => {
+            this.dialogRef.close();
+            this._snackBar.open(`Skills actualizado correctamente`, 'Cerrar', {
+                duration: 2000,
+                verticalPosition: 'bottom'
+            })
+        }, error => {
+            this._snackBar.open(`Error al actualizar skill: ${error.error.mensaje}`, 'Cerrar', {
+                duration: 2000,
+                verticalPosition: 'bottom'
+            })
+        });
+    } else {
+        this._snackBar.open('El porcentaje debe estar entre 0 y 100', 'Cerrar', {
+            duration: 2000,
+            verticalPosition: 'bottom'
+        });
+        // Enfocar el campo de habilidad para que el usuario pueda corregirlo
+        const porcentajeSkillInput = document.getElementById('porcentajeSkillS') as HTMLInputElement;
+        porcentajeSkillInput.focus();
+    }
+}
+
+
 
 
 
   
   onNoClick(): void {
     this.dialogRef.close();
+  }
+  
+
+  formatLabel(value: number) {
+    return value + '%';
   }
 
 }

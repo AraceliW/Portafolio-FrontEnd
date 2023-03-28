@@ -7,6 +7,15 @@
             <input type="text" id="nombreSkillSoft" name="nombreSkillSoft" placeholder="Ej: Trabajo en equipo"
                 [(ngModel)]="nombreSkill" required />
         </label>
+
+        <label for="porcentajeSkillS">Nivel de habilidad
+            <input type="number" id="porcentajeSkillS" name="porcentajeSkillS" placeholder="Ej: 80" min="0" max="100" step="5"
+            [(ngModel)]="porcentajeSkillS" required>
+            <span *ngIf="porcentajeSkillS < 0 || porcentajeSkillS > 100" class="warning-message">El valor debe estar entre 0 y 100</span>     
+        </label>
+      
+        
+
     </div>
     
     <div mat-dialog-actions class="form-container__btn">

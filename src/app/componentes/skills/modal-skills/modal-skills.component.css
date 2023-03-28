@@ -1,1 +1,7 @@
-@import '../../skillh/modal-skillh/modal-skillh.component.css'
+@import '../../skillh/modal-skillh/modal-skillh.component.css';
+
+.warning-message {
+    color: red;
+    font-size: 12px;
+    margin-left: 5px;
+  }

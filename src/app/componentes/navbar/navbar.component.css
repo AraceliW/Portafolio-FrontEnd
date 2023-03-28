@@ -5,6 +5,15 @@
    object-position: center center;
 }
 
+
+#logoAYoProgramo{
+    width: 200px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center center;
+ }
+
+ 
 .sm-icons{
     flex-direction: row;
 }
