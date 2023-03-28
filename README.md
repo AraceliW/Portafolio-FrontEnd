@@ -10,10 +10,10 @@ La aplicación se basa en una arquitectura distribuida y cuenta con un diseño d
 El diseño de la aplicación se ha optimizado para ser responsive, lo que significa que la interfaz de usuario se adapta automáticamente al tamaño de la pantalla del dispositivo utilizado para su visualización.
 
 
-## FRONT END 🎨
+## 🎨 FRONT END 
 Este repositorio contiene la capa front-end de mi portafolio de mi trabajo final para #YoProgramo.
 
-## Backend 💻
+## 💻 Backend
 Puedes ver el repositorio del back-end en el siguiente enlace: https://github.com/AraceliW/Portafolio-BackEnd
 
 ## VISTA PREVIA
@@ -21,7 +21,7 @@ Puedes ver el repositorio del back-end en el siguiente enlace: https://github.co
 
 
 
-## TECNOLOGIAS USADAS 🔍
+## 🔍 TECNOLOGIAS USADAS
 - HTML 5
 - CSS 3
 - TypeScript 4.8.2
@@ -34,7 +34,7 @@ Puedes ver el repositorio del back-end en el siguiente enlace: https://github.co
 - Circle Progress 1.7.1
 
 
-## SECCIONES 💼
+## 💼 SECCIONES
 - Header
 - Acerca de mi
 - Experiencia
@@ -44,7 +44,7 @@ Puedes ver el repositorio del back-end en el siguiente enlace: https://github.co
 - Proyectos
 
 
-## ACCESO DE EDICION DE CONTENIDO
+## 🚪 ACCESO DE EDICION DE CONTENIDO
 Mi portafolio web incluye una funcionalidad de login para que puedas agregar y editar la información que aparece en el sitio.
 ![Imagen del login](https://drive.google.com/uc?export=download&id=1MyYRD3wEDhE2iJM51fPkH-HdhoaUVTqJ)
 Para poder editar el contenido debés acceder desde el ícono de logueado con el usario y password específico.
@@ -52,7 +52,7 @@ Para poder editar el contenido debés acceder desde el ícono de logueado con el
 
 
 
-## EDICION DE CONTENIDO
+## 📝 EDICION DE CONTENIDO
 Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del sitio y modificar o editar la información correspondiente.
 <p align="center">
   <img src="https://drive.google.com/uc?export=download&id=14TBEsA52XjwRYeC_qheyc5mdb1VQkhWs" width="400" />
@@ -60,7 +60,7 @@ Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del si
 </p>
 
 
-## INSTRUCCIONES DE USO 🚀
+## 🚀 INSTRUCCIONES DE USO
 - Clona este repositorio: 
     `git clone https://github.com/AraceliW/Portafolio-FrontEnd.git`
 - Instala las dependencias: 
@@ -71,5 +71,5 @@ Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del si
 Asegurate de tener corriendo un servidor con el backend para que los datos viajen correctamente entre la base de datos.
 
 
-### ESTADO  🚧
+### 🚧 ESTADO 
 Actualmente este proyecto se encuentra en proceso de desarrollo y se irá actualizando conforme se agreguen nuevas funcionalidades y mejoras. 🔜
