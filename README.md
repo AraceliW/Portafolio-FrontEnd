@@ -44,6 +44,22 @@ Puedes ver el repositorio del back-end en el siguiente enlace: https://github.co
 - Proyectos
 
 
+## ACCESO DE EDICION DE CONTENIDO
+Mi portafolio web incluye una funcionalidad de login para que puedas agregar y editar la información que aparece en el sitio.
+![Imagen del login](https://drive.google.com/uc?export=download&id=1MyYRD3wEDhE2iJM51fPkH-HdhoaUVTqJ)
+Para poder editar el contenido debés acceder desde el ícono de logueado con el usario y password específico.
+![Imagen del login](https://drive.google.com/uc?export=download&id=1AA53yNclbxPqVQVywBQITIJdsJUK8Hun)
+
+
+
+## EDICION DE CONTENIDO
+Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del sitio y modificar o editar la información correspondiente.
+<p align="center">
+  <img src="https://drive.google.com/uc?export=download&id=14TBEsA52XjwRYeC_qheyc5mdb1VQkhWs" width="400" />
+  <img src="https://drive.google.com/uc?export=download&id=1fdurIldBv73mEAODgFAVZov3_V8xfb5R" width="400" /> 
+</p>
+
+
 ## INSTRUCCIONES DE USO 🚀
 - Clona este repositorio: 
     `git clone https://github.com/AraceliW/Portafolio-FrontEnd.git`
@@ -53,22 +69,6 @@ Puedes ver el repositorio del back-end en el siguiente enlace: https://github.co
     `ng serve`
 
 Asegurate de tener corriendo un servidor con el backend para que los datos viajen correctamente entre la base de datos.
-
-## ACCESO DE EDICION DE CONTENIDO
-Mi portafolio web incluye una funcionalidad de login para que puedas agregar y editar la información que aparece en el sitio.
-![Imagen del login](https://drive.google.com/uc?export=download&id=1MyYRD3wEDhE2iJM51fPkH-HdhoaUVTqJ)
-Para poder editar el contenido debés acceder desde el ícono de logueado con el usario y password específico.
-![Imagen del login](https://drive.google.com/uc?export=download&id=1AA53yNclbxPqVQVywBQITIJdsJUK8Hun)
-
-
-
-### Edición de contenido
-Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del sitio y modificar o editar la información correspondiente.
-<p align="center">
-  <img src="https://drive.google.com/uc?export=download&id=14TBEsA52XjwRYeC_qheyc5mdb1VQkhWs" width="400" />
-  <img src="https://drive.google.com/uc?export=download&id=1fdurIldBv73mEAODgFAVZov3_V8xfb5R" width="400" /> 
-</p>
-
 
 
 ### ESTADO  🚧
