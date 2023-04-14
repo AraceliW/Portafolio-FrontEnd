@@ -15,6 +15,7 @@ export class EditSkillhComponent implements OnInit {
 
   skillh: Skillh = new Skillh("", 0);
   errorNombreSkillH: boolean = false;
+  errorPorcentajeSkillH: boolean = false;
 
   constructor(
     private service: SkillhService,
@@ -40,7 +41,8 @@ export class EditSkillhComponent implements OnInit {
 
   onUpdate(id: any): void {
     this.validarLongitudNombreSkillH(); // validar la longitud del nombre de habilidad
-    if (!this.errorNombreSkillH) { // si no hay error de longitud
+    this.validarPorcentajeSkillH(); // validar el porcentaje de habilidad
+    if (!this.errorNombreSkillH && !this.errorPorcentajeSkillH) { // si no hay error de longitud
     this.service.update(id, this.skillh).subscribe(data => {
       this.dialogRef.close();
       this._snackBar.open(`Skills actualizado correctamente`, 'Cerrar', {
@@ -53,13 +55,19 @@ export class EditSkillhComponent implements OnInit {
         verticalPosition: 'bottom'
       })
     })
-  }  else {
+
+  } else if (this.errorNombreSkillH) { // si hay error de nombre
     this._snackBar.open(`El nombre de la habilidad debe tener menos de 10 caracteres.`, 'Cerrar', {
       duration: 2000,
       verticalPosition: 'bottom'
     })
+  } else if (this.errorPorcentajeSkillH) { // si hay error de porcentaje
+    this._snackBar.open(`El porcentaje de la habilidad debe estar entre 0 y 100.`, 'Cerrar', {
+      duration: 2000,
+      verticalPosition: 'bottom'
+    })
   }
-} 
+}
 
 
   onNoClick(): void {
@@ -81,6 +89,14 @@ export class EditSkillhComponent implements OnInit {
     }
   }
   
+
+  validarPorcentajeSkillH() {
+    if (this.skillh.porcentajeSkillH < 0 || this.skillh.porcentajeSkillH > 100) {
+      this.errorPorcentajeSkillH = true;
+    } else {
+      this.errorPorcentajeSkillH = false;
+    }
+  }
 
 
 }

@@ -15,10 +15,14 @@
             <input type="url" id="imgProyecto" name="imgProyecto" placeholder="Carga la URL"
                 [(ngModel)]="proyectos.imgProyecto" required />
         </label>
-        <label for="endProyecto">Año de creacion del proyecto
-            <input type="number" id="endProyecto" name="endProyecto" placeholder="Solo el año"
-                [(ngModel)]="proyectos.endProyecto" required />
-        </label>
+
+
+        <label for="endProyecto">Fecha de inicio</label>
+        <select id="endProyecto" name="endProyecto" [(ngModel)]="proyectos.endProyecto" required>
+            <option *ngFor="let year of years" [value]="year">{{year}}</option>
+        </select>
+
+
         <label for="descripcionProyecto">Descripción del proyecto
             <textarea id="descripcionProyecto" name="descripcionProyecto"
                 placeholder="Ej: Desarrollé un Porfolio usando diferentes tecnologias..." maxlength="1000" [(ngModel)]="proyectos.descripcionProyecto"

@@ -18,13 +18,19 @@ export class MdalExperienciaComponent implements OnInit {
   imgExp: string = '';
   startExp: number = 0;
   endExp: number = 0;
+  years: number[] = [];
+
 
   constructor(
     public dialogRef: MatDialogRef<MdalExperienciaComponent>,
     private service: ExperienciaService,
     private snackbar: MatSnackBar,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) { }
+  ) { const currentYear = new Date().getFullYear();
+    for (let year = currentYear; year >= 1900; year--) {
+      this.years.push(year);
+    }
+  }
 
   ngOnInit(): void {
   }

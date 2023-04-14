@@ -23,8 +23,15 @@ export class EditExperienciaComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
 
-
+  public years: number[] = [];
+  
   ngOnInit(): void {
+    const currentYear = new Date().getFullYear();
+    for(let i = currentYear; i >= 1900; i--){
+        this.years.push(i);
+    }
+
+
     this.service.detail(this.data.id).subscribe(data => {
       this.experiencia = data;
     }, error => {

@@ -18,6 +18,7 @@ export class ModalEducacionComponent implements OnInit {
   imgEducacion: string = '';
   startEducacion: number = 0;
   endEducacion: number = 0;
+  years: number[] = [];
 
 
   constructor(
@@ -25,7 +26,12 @@ export class ModalEducacionComponent implements OnInit {
     private service: EducacionService,
     private snackbar: MatSnackBar,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) { }
+  ) { 
+    const currentYear = new Date().getFullYear();
+    for (let year = currentYear; year >= 1900; year--) {
+      this.years.push(year);
+    }
+  }
 
 
   ngOnInit(): void {

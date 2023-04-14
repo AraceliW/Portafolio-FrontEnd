@@ -10,12 +10,18 @@
         <label for="establecimiento">Nombre de la institución
             <input type="text" id="establecimiento" name="establecimiento" placeholder="Ej: Universidad Nacional de Jujuy" [(ngModel)]="educacion.establecimiento" required/>
         </label>
-        <label for="startEducacion">Fecha de inicio
-            <input type="number" id="startEducacion" name="startEducacion" placeholder="Sólo el año" [(ngModel)]="educacion.startEducacion" required/>
-        </label>
-        <label for="endEducacion">Fecha de fin
-            <input type="number" id="endEducacion" name="endEducacion" placeholder="Solo el año" [(ngModel)]="educacion.endEducacion" required/>
-        </label>
+
+
+        <label for="startEducacion">Fecha de inicio</label>
+        <select id="startEducacion" name="startEducacion" [(ngModel)]="educacion.startEducacion" required>
+            <option *ngFor="let year of years" [value]="year">{{year}}</option>
+        </select>
+
+        <label for="endEducacion">Fecha de fin</label>
+        <select id="endEducacion" name="endEducacion" [(ngModel)]="educacion.endEducacion" required>
+            <option *ngFor="let year of years" [value]="year">{{year}}</option>
+        </select>
+
         <label for="imgEducacion">Imagen
             <input type="url" id="imgEducacion" name="imgEducacion" placeholder="Carga la URL" [(ngModel)]="educacion.imgEducacion" required/>
         </label>

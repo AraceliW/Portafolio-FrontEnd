@@ -25,8 +25,16 @@ export class EditProyectosComponent implements OnInit {
   ) { }
 
 
+  public years: number[] = [];
+
 
   ngOnInit(): void {
+    const currentYear = new Date().getFullYear();
+    for(let i = currentYear; i >= 1900; i--){
+        this.years.push(i);
+    }
+
+
     this.service.detail(this.data.id).subscribe(data => {
       this.proyectos = data;
     }, error => {

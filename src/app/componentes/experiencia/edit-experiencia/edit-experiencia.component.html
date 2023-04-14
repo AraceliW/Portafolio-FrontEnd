@@ -9,12 +9,20 @@
             <label for="compania">Nombre de la empresa
                 <input type="text" id="compania" name="compania" placeholder="Ej: Google" [(ngModel)]="experiencia.compania" required/>
             </label>
-            <label for="startExp">Fecha de inicio
-                <input type="number" id="startExp" name="startExp" placeholder="Sólo el año" [(ngModel)]="experiencia.startExp" required/>
-            </label>
-            <label for="endExp">Fecha de fin
-                <input type="number" id="endExp" name="endExp" placeholder="Sólo el año" [(ngModel)]="experiencia.endExp" required/>
-            </label>
+
+            
+            <label for="startExp">Fecha de inicio</label>
+                <select id="startExp" name="startExp" [(ngModel)]="experiencia.startExp" required>
+                <option *ngFor="let year of years" [value]="year">{{year}}</option>
+                </select>
+
+            <label for="endExp">Fecha de fin</label>
+                <select id="endExp" name="endExp" [(ngModel)]="experiencia.endExp" required>
+                <option *ngFor="let year of years" [value]="year">{{year}}</option>
+                </select>
+
+
+
             <label for="imgExp">Imagen
                 <input type="url" id="imgExp" name="imgExp" placeholder="Carga la URL" [(ngModel)]="experiencia.imgExp" required/>
             </label>

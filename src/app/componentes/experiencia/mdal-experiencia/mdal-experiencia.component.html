@@ -9,12 +9,20 @@
             <label for="compania">Nombre de la empresa
                 <input type="text" id="compania" name="compania" placeholder="Ej: Google" [(ngModel)]="compania" required/>
             </label>
+
             <label for="startExp">Fecha de inicio
-                <input type="number" id="startExp" name="startExp" placeholder="Sólo el año" [(ngModel)]="startExp" required/>
+                <select id="startExp" name="startExp" [(ngModel)]="startExp" required>
+                  <option *ngFor="let year of years" [value]="year">{{year}}</option>
+                </select>
             </label>
+
             <label for="endExp">Fecha de fin
-                <input type="number" id="endExp" name="endExp" placeholder="Sólo el año" [(ngModel)]="endExp" required/>
+                <select id="endExp" name="endExp" [(ngModel)]="endExp" required>
+                  <option *ngFor="let year of years" [value]="year">{{year}}</option>
+                </select>
             </label>
+
+
             <label for="imgExp">Imagen
                 <input type="url" id="imgExp" name="imgExp" placeholder="Carga la URL" [(ngModel)]="imgExp" required/>
             </label>

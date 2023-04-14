@@ -21,12 +21,11 @@
                 </div>
   
                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                <div *ngIf="isLogginFail" class="alert alert-danger mt-3">Contraseña o usuario invalido. Intentelo nuevamente</div>
+
               </form>
           
             </div>
-
-          
-
           </div>
         </div>
       </div>

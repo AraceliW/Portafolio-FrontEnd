@@ -13,6 +13,7 @@
             <label for="porcentajeSkillH">Nivel de habilidad
                 <input type="number" id="porcentajeSkillH" name="porcentajeSkillH" placeholder="Ej:80" min="0" max="100" step="5"
                 [(ngModel)]="porcentajeSkillH" required>
+                <span *ngIf="porcentajeSkillH > 100" class="text-danger">El porcentaje de habilidad debe ser menor o igual a 100.</span>
             </label>
             
     
