@@ -10,7 +10,7 @@ import { Skillh } from '../model/skillh';
 
 export class SkillhService {
 
-  ENDPOINT = 'http://localhost:8080/skillh';
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/skillh';
 
   constructor(private httpClient: HttpClient) { }
 

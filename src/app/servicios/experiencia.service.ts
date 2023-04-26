@@ -10,7 +10,7 @@ import { Experiencia } from '../model/experiencia';
 
 export class ExperienciaService {
 
-  ENDPOINT= 'http://localhost:8080/explab';
+  ENDPOINT= 'https://portafolio-backend-hiku.onrender.com/explab';
 
   constructor(private httpClient: HttpClient) { }
 

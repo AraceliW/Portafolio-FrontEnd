@@ -10,7 +10,7 @@ import { Educacion } from '../model/educacion';
 
 export class EducacionService {
   
-  ENDPOINT = 'http://localhost:8080/educacion'
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/educacion'
 
 
   constructor(private httpClient: HttpClient) { }

@@ -10,7 +10,7 @@ import { Proyecto } from '../model/proyectos';
 
 export class ProyectosService {
 
-  ENDPOINT = 'http://localhost:8080/proyectos';
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/proyectos';
 
   constructor(private httpClient: HttpClient) { }
 

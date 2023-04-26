@@ -10,7 +10,7 @@ import { Header } from '../model/header';
 
 export class HeaderService {
 
-  ENDPOINT = 'http://localhost:8080/header';
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/header';
 
 
   constructor(private http: HttpClient) { }

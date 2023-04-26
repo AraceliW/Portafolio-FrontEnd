@@ -11,7 +11,7 @@ import { Skill } from '../model/skills';
 
 export class SkillsService {
   
-  ENDPOINT = 'http://localhost:8080/skills';
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/skills';
 
   constructor(private httpClient: HttpClient) { }
 

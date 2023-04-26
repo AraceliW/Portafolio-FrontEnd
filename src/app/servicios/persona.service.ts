@@ -11,7 +11,7 @@ import { Persona } from '../model/persona';
 
 export class PersonaService {
  
-  ENDPOINT = 'http://localhost:8080/persona';
+  ENDPOINT = 'https://portafolio-backend-hiku.onrender.com/persona';
 
 
   constructor(private http: HttpClient) { }
