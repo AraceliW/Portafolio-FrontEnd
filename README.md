@@ -52,14 +52,6 @@ Para poder editar el contenido debés acceder desde el ícono de logueado con el
 
 
 
-## 📝 EDICION DE CONTENIDO
-Una vez que hayas iniciado sesión, podrás acceder a todas las secciones del sitio y modificar o editar la información correspondiente.
-<p align="center">
-  <img src="https://drive.google.com/uc?export=download&id=14TBEsA52XjwRYeC_qheyc5mdb1VQkhWs" width="400" />
-  <img src="https://drive.google.com/uc?export=download&id=1fdurIldBv73mEAODgFAVZov3_V8xfb5R" width="400" /> 
-</p>
-
-
 ## 🚀 INSTRUCCIONES DE USO
 - Clona este repositorio: 
     `git clone https://github.com/AraceliW/Portafolio-FrontEnd.git`
